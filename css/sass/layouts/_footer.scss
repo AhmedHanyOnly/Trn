@@ -1,0 +1,123 @@
+.footer {
+  // background-color: $main-color;
+  color: white;
+  background: url(../../../images/Rectangle\ 80.png) no-repeat ;
+  background-size: cover;
+  font-size: 16px;
+  font-weight: 400;
+  .footer-top {
+    padding: 200px 0 60px;
+    .sub-inp {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 100px;
+      flex-wrap: wrap;
+      .text {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 120px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      .inp-holder {
+        display: flex;
+        flex-grow: 1;
+        gap: 20px;
+        input {
+          border: 0;
+          outline: 0;
+          flex-grow: 1;
+          background-color: rgba($color: #fff, $alpha: 0.2);
+          padding: 20px;
+          color: #fff;
+          &::placeholder {
+            color: #fff;
+            font-size: 18px;
+          }
+        }
+        .btn-sub {
+          padding: 20px 60px;
+          background-color: $sec-color;
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+      @include maxWidth(sm) {
+        .text {
+          font-size: 24px;
+          line-height: 60px;
+        }
+        .inp-holder {
+          gap: 10px;
+          input {
+            padding: 0px;
+            &::placeholder {
+              color: #fff;
+              font-size: 12px;
+              padding: 0 5px;
+            }
+          }
+          .btn-sub {
+            padding: 10px 25px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .info {
+      .logo {
+        margin-bottom: 26px;
+        width: 100px;
+        height: auto;
+        @include maxWidth(sm) {
+          width: 80px;
+        margin: 50px 0 26px;
+      }
+      }
+    }
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      .title {
+        margin-bottom: 1px;
+        font-size: 18px;
+        line-height: normal;
+        font-weight: 600;
+      }
+      .text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: right;
+        width: 425px;
+        @include maxWidth(sm) {
+          font-size: 12px;
+          width: 340px;
+        }
+      }
+      .item {
+        white-space: nowrap;
+        color: white;
+        line-height: normal;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+  .bar {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .footer-bottom {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0 11px;
+  }
+}

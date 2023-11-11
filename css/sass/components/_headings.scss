@@ -1,0 +1,122 @@
+.main-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 106px;
+  letter-spacing: 0em;
+  color: #000;
+  position: relative;
+  width: fit-content;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 20px;
+    background-color: $sec-color;
+  }
+  @include maxWidth(sm) {
+    font-size: 38px;
+    &::before {
+      bottom: 30px;
+      height: 15px;
+    }
+    &.scan-text{
+      font-size: 28px;
+    }
+  }
+}
+.sec-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 106px;
+  text-align: right;
+  color: #000;
+  @include maxWidth(sm) {
+    font-size: 38px;
+    line-height: 70px;
+  }
+}
+
+.main-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 61px;
+  text-align: right;
+  color: #939393;
+  @include maxWidth(sm) {
+    font-size: 18px;
+    line-height: 55px;
+  }
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 100px;
+  .sub {
+    color: $sec-color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  @include maxWidth(sm) {
+    margin: 20px 0 50px;
+    .sub {
+      font-size: 24px;
+      line-height: 20px;
+    }
+    .main-title {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 106px;
+      letter-spacing: 0em;
+      color: #000;
+      position: relative;
+      width: fit-content;
+      &::before {
+        content: "";
+        bottom: 30px;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 15px;
+        background-color: $sec-color;
+      }
+    }
+  }
+}
+
+.sec-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 90px;
+    text-align: center;
+    @include maxWidth(sm) {
+      &.how{
+        font-size: 35px;
+      }
+    }
+  }
+  .sub {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: $sec-color;
+  }
+  .des {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+  }
+}
