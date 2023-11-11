@@ -395,26 +395,6 @@
   z-index: 3;
 }
 
-.inp {
-  border: 1.2px solid #b4bec8;
-  border-radius: 4px;
-  padding: 12px;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 400;
-  direction: rtl;
-  display: block;
-}
-.inp::placeholder {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(135, 135, 135, 0.5);
-}
-
-textarea {
-  height: 135px;
-}
-
 * {
   box-sizing: border-box;
   padding: 0%;
@@ -975,7 +955,7 @@ select:focus {
 
 .footer {
   color: white;
-  background: url(../../../images/Rectangle\ 80.png) no-repeat;
+  background: url(../images/shape.png) no-repeat;
   background-size: cover;
   font-size: 16px;
   font-weight: 400;

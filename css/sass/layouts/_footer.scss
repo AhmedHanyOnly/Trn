@@ -1,7 +1,7 @@
 .footer {
   // background-color: $main-color;
   color: white;
-  background: url(../images/shape.png) no-repeat ;
+  background: url(../images/shape.png) no-repeat;
   background-size: cover;
   font-size: 16px;
   font-weight: 400;
@@ -73,8 +73,8 @@
         height: auto;
         @include maxWidth(sm) {
           width: 80px;
-        margin: 50px 0 26px;
-      }
+          margin: 50px 0 26px;
+        }
       }
     }
     .items {
